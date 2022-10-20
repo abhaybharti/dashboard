@@ -5,3 +5,18 @@
   margin: 0;
   padding: 0;
 }
+
+.TopRight {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* will not show hyperlink & color: inherit will show color of parent */
+.link {
+  text-decoration: none;
+  color: inherit;
+}

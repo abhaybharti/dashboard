@@ -1,6 +1,7 @@
 import React from "react";
 import { NotificationsNone, Language, Settings } from "@material-ui/icons";
 import sytled from "styled-components";
+import "../App.css";
 
 const NavbarContainer = sytled.div`
   width: 100%;
@@ -30,14 +31,16 @@ const TopLeft = sytled.div``;
 
 const TopRight = sytled.div`
     display: flex,
+    flex-direction: row;
     align-items: center;
-`;
+    `;
 
 const IconContainer = sytled.div`
 position: relative;
 cursor: pointer;
 margin-right: 10px;
 color: #555;
+
 `;
 
 const IconBadge = sytled.span`
@@ -69,7 +72,7 @@ const Navbar = () => {
         <TopLeft>
           <Logo>Dashboard</Logo>
         </TopLeft>
-        <TopRight>
+        <TopRight className="TopRight">
           <IconContainer>
             <NotificationsNone />
             <IconBadge>5</IconBadge>
