@@ -116,12 +116,12 @@ const Sidebar = () => {
         <SidebarMenu>
           <SidebarTitle>Dashboard</SidebarTitle>
           <SidebarList>
-            {/* <Link to="/" className="link"> */}
-            <SidebarListItem>
-              <MyLineStyle />
-              Home
-            </SidebarListItem>
-            {/* </Link> */}
+            <Link to="/" className="link">
+              <SidebarListItem>
+                <MyLineStyle />
+                Home
+              </SidebarListItem>
+            </Link>
             <SidebarListItem>
               <MyTimeline />
               Analytics
@@ -135,18 +135,18 @@ const Sidebar = () => {
         <SidebarMenu>
           <SidebarTitle>All Menu</SidebarTitle>
           <SidebarList>
-            {/* <Link to="/users" className="link"> */}
-            <SidebarListItem>
-              <MyPermIdentity />
-              Users
-            </SidebarListItem>
-            {/* </Link> */}
-            {/* <Link to="/products" className="link"> */}
-            <SidebarListItem>
-              <MyStorefront />
-              Products
-            </SidebarListItem>
-            {/* </Link> */}
+            <Link to="/users" className="link">
+              <SidebarListItem>
+                <MyPermIdentity />
+                Users
+              </SidebarListItem>
+            </Link>
+            <Link to="/products" className="link">
+              <SidebarListItem>
+                <MyStorefront />
+                Products
+              </SidebarListItem>
+            </Link>
             <SidebarListItem>
               <MyAssessment />
               Reports
